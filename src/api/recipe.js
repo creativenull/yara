@@ -11,7 +11,7 @@ export async function fetchRecipes () {
         notes
       }
     }
-  `).then(res => res.json())
+  `)
 }
 
 /**
@@ -22,7 +22,11 @@ export async function fetchRecipes () {
 export function fetchRecipe (id) {
   return request(gql`
     query {
-      recipe(id: ${id})
+      recipe(id: "${id}") {
+        title
+        quickSummary
+        notes
+      }
     }
   `)
 }

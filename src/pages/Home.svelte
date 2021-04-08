@@ -22,7 +22,8 @@
       style="width: 100%"
       class="rounded bg-white dark:bg-gray-800 dark:border dark:border-blue-500 p-2"
       type="text"
-      value={search} />
+      value={search}
+    />
   </div>
   <div class="recipes-box grid grid-cols-3 gap-4 w-4/6 mx-auto mt-10">
 

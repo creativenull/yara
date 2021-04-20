@@ -25,6 +25,10 @@ export function fetchRecipe (id) {
       recipe(id: "${id}") {
         title
         quickSummary
+        featuredImg {
+          caption
+          src
+        }
         author { name avatar }
         images { src caption }
         ingredients {
